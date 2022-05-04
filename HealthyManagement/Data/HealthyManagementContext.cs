@@ -15,5 +15,7 @@ namespace HealthyManagement.Data
         }
 
         public DbSet<HealthyManagement.Models.Cliente> Cliente { get; set; }
+
+        public DbSet<HealthyManagement.Models.Colaborador> Colaborador { get; set; }
     }
 }

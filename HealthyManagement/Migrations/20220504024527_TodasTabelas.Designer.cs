@@ -4,14 +4,16 @@ using HealthyManagement.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HealthyManagement.Migrations
 {
     [DbContext(typeof(HealthyManagementContext))]
-    partial class HealthyManagementContextModelSnapshot : ModelSnapshot
+    [Migration("20220504024527_TodasTabelas")]
+    partial class TodasTabelas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
