@@ -24,5 +24,7 @@ namespace HealthyManagement.Models
             Preco = preco;
             TipoVenda = tipoVenda;
         }
+
+        
     }
 }
