@@ -55,8 +55,8 @@ namespace HealthyManagement
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    name: "Login",
+                    pattern: "{controller=Usuarios}/{action=Index}/{id?}");
             });
         }
     }

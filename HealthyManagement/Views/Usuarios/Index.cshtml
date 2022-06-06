@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HealthyManagement.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Login</h1>
+
+<form action="Usuarios/ChecarLogin">
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 text-left">
+            <label for="userId" class="form-label">Usuário</label>
+            <input class="form-control" name="login" id="login"></input>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 text-left">
+            <label class="form-label">Senha</label>
+            <input class="form-control" type="password" name="senha" id="senha"></input>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="button">
+             <button class="btn btn-primary" type="submit">Entrar</button>
+        </div>
+    </div>
+</form>

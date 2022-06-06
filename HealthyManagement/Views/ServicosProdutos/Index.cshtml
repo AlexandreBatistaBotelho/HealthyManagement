@@ -4,10 +4,10 @@
     ViewData["Title"] = "Cadastro de Serviço";
 }
 
-<h1>Index</h1>
+<h2>Produtos e Serviços</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Novo Produto/Serviço</a>
 </p>
 <table class="table">
     <thead>
@@ -23,7 +23,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TipoVenda)
-                @*@Html.DropDownList("TipoVenda", Html.GetEnumSelectList(typeof(HealthyManagement.Models.Enums.TipoVenda)))*@
             </th>
             <th></th>
         </tr>
@@ -44,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.TipoVenda)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Alterar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
             </td>
         </tr>
 }

@@ -19,5 +19,7 @@ namespace HealthyManagement.Data
         public DbSet<HealthyManagement.Models.Colaborador> Colaborador { get; set; }
 
         public DbSet<HealthyManagement.Models.ServicoProduto> ServicoProduto { get; set; }
+
+        public DbSet<HealthyManagement.Models.Usuario> Usuario { get; set; }
     }
 }
